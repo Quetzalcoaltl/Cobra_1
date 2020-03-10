@@ -1,0 +1,22 @@
+import curses 
+import random
+
+s= curses.initscre() #iniciando uma tela com curses
+curses.cusr_set(0) #colocando o cursor em 0, ou seuja na posioção zero do meu role
+sh, sw =s.getmaxyz() #pegando atraves de getmaxyx a profundidade e a altura da tela
+w.keypad(1)
+w.timeout(100) #refresh the screen a cada 100 milisegundos 
+
+snk_x= sw/4 #posição inicial x da cobrinha
+snk_y= sw/2 #posição inicial y da cobrinha
+ 
+#desenvolvedo a cobra, o interessante aqui é que ele criou uma lista para a cobra, suponha que a cada vez que a cobra ingerir um alimento ela ira adicionar um elemento a lista
+snake=[
+	[snk_y,snk_x],
+	[snk_y,snk_x-1],
+	[snk_y,snk_x-2]	]
+]
+
+comida= =[sh/2, sw/2]
+w.addch(comida[0], comida[1], curses.ACS_PI)
+
