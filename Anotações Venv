@@ -1,0 +1,5 @@
+Python 3
+	- python3 -m venv <Nome Ambiente>
+	- source "../<Nome Ambiente>/bin/activate"
+Caminhos:
+	- C:\Users\victo\OneDrive\Documentos\python
